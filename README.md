@@ -1,28 +1,15 @@
-<<<<<<< HEAD
-# README
+The Book Library App is a web application designed to help users manage their book collections. The app enables users to add new books with details such as title, author, and publication year. Users can also view their library of books and remove entries as needed.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 3.23
+* rails   7.1.3.2
+* bootstrap 5
 
-Things you may want to cover:
+  
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
-=======
-# Book-Library-app
->>>>>>> 1666a633d8a6ebd7c7f26a66e20de76a5178156c
