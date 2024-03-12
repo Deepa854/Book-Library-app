@@ -1,0 +1,18 @@
+<h1>Book Library</h1>
+<p>Manage Your Book Collection</p>
+
+<%= form_with(model: @new_book, url: books_path, local: true) do |form| %>
+  <%= form.text_field :title, placeholder: 'Book Title' %>
+  <%= form.text_field :author, placeholder: 'Author' %>
+  <%= form.number_field :publication_year, placeholder: 'Publication Year' %>
+  <%= form.submit 'Add Book', class: 'btn btn-primary' %>
+<% end %>
+
+<ul>
+  <% @books.each do |book| %>
+    <li>
+      <%= "#{book.title} by #{book.author}, #{book.publication_year}" %>
+      <%= link_to 'Remove',  book_path(book), remote: true, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+    </li>
+  <% end %>
+</ul>
